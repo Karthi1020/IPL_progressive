@@ -1,0 +1,11 @@
+POST  https://ec2-13-202-45-127.projects.wecreateproblems.com/proxy/5001/team HTTP/1.1
+content-type: application/json
+
+{
+  "teamName": "Mumbai Indians",
+  "location": "Mumbai",
+  "ownerName": "Reliance Industries",
+  "establishmentYear": 2008
+}
+
+GET  https://ec2-13-202-45-127.projects.wecreateproblems.com/proxy/5001/team

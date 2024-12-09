@@ -1,8 +1,15 @@
 package com.wecp.progressive.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Comparator;
 
+@Entity
 public class Cricketer implements Comparable<Cricketer> {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int cricketerId;
     private int teamId;
     private String cricketerName;

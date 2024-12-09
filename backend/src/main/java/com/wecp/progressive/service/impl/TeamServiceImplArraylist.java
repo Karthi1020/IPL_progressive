@@ -2,11 +2,13 @@ package com.wecp.progressive.service.impl;
 
 import com.wecp.progressive.entity.Team;
 import com.wecp.progressive.service.TeamService;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+@Service
 public class TeamServiceImplArraylist  implements TeamService {
 
     private static List<Team> teamList = new ArrayList<>();

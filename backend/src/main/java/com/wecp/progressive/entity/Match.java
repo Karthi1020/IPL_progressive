@@ -1,12 +1,20 @@
 package com.wecp.progressive.entity;
 
+import javax.persistence.*;
 import java.util.Date;
 
+// Since "match" is a reserved word in mysql, using table name as "matches"
+@Entity(name = "matches")
 public class Match {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int matchId;
     private int firstTeamId;
     private int secondTeamId;
+
+    @Temporal(TemporalType.DATE)
     private Date matchDate;
+
     private String venue;
     private String result;
     private String status;
